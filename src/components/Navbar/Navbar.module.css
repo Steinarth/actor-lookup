@@ -1,0 +1,18 @@
+.navBar {
+    border: 2px solid black;
+    font-size: 1.3em;
+    background-color: silver;
+}
+
+.navLink {
+    color: black;
+    text-decoration:none;
+}
+
+.navLinkH5 {
+    padding-left: 1em;
+}
+
+.navLink:hover {
+    color: gray;
+}
