@@ -7,7 +7,7 @@ const Navbar = () => {
   return(
     <div className={ navBar }>
       <NavLink className={ navLink } exact to="/" >
-        <h5 className={ navLinkH5 }>Actor lookup</h5>
+        <h5 className={ navLinkH5 }>Actor lookup</h5> 
       </NavLink>
     </div>
   );
