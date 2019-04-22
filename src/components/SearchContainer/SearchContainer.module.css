@@ -1,0 +1,10 @@
+.searchBar {
+    width: 60%;
+    justify-self: center;
+    align-self: center;
+}
+
+.searchBarContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+}
