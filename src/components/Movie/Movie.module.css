@@ -1,0 +1,12 @@
+.movieContainer {
+    width: 300px;
+    justify-self: center;
+}
+
+.movieDescription {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 100px;
+    word-wrap: break-word;
+
+}

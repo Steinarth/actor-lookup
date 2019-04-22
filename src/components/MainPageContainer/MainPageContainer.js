@@ -21,7 +21,8 @@ export class MainPageContainer extends Component {
                 place_of_birth: '',
                 birthday:'',
                 biography: '',
-            }
+            },
+            movies: [ ]
         }
 
         this.onSearch = this.onSearch.bind(this);
@@ -42,14 +43,16 @@ export class MainPageContainer extends Component {
                 biography:      actorDetails.biography,
             };
 
-            console.log(actor);
+            let movies = await movieService.getMoviesByActor(actor.id);
+            console.log(movies);
+            
 
-            this.setState({actor, searched: true });
+            this.setState({actor,movies, searched: true });
         }
     };
 
     render() {
-        let { actor } = this.state;
+        let { actor, movies } = this.state;
       return (
         <div className={layout}>
             <SearchContainer 
@@ -65,7 +68,9 @@ export class MainPageContainer extends Component {
                         place_of_birth={actor.place_of_birth}
 
                         />
-                    <MoviesByActorContainer />
+                    <MoviesByActorContainer 
+                        movies={movies}
+                    />
                 </div>
             }
         </div>

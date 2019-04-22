@@ -1,0 +1,7 @@
+.movieContainer {
+    margin-top: 20%;
+    display: grid;
+    grid: auto / repeat(4, 1fr);
+    overflow: hidden;
+    grid-gap: 20px 20px;
+}
